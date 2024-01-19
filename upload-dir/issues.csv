@@ -1,0 +1,828 @@
+﻿#,Dự án,Kiểu vấn đề,Tác vụ cha,Parent task subject,Trạng thái,Mức ưu tiên,Chủ đề,Tác giả,Phân công cho,Cập nhật,Chủ đề,Phiên bản,Bắt đầu,Hết hạn,Thời gian ước lượng,Total estimated time,Thời gian,Tổng thời gian sử dụng,Tiến độ,Tạo,Đã đóng,Last updated by,Liên quan,Tập tin,Phân loại lỗi,Mã testcase,Số lần làm lại,Riêng tư,Mô tả,Last notes
+5804,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Tạo mới,Làm ngay,"[2.5. QLF] Sau khi cập nhật, Create_user + Create_datetime = null",Thu Hương Đỗ,Bùi Minh Tuấn,08-09-2023 13:47,"","",08-09-2023,"","","",0.00,0.00,0,08-09-2023 13:47,"","","","clipboard-202309081346-oghpe.png
+clipboard-202309081347-arf7w.png",Lỗi BE,2.5. QLF,,Không,"B1. Thêm mới thành công 1 bản ghi
+-> Hiện trạng: Create_user + Create_datetime đã lưu đúng
+B2. Cập nhật bản ghi vừa thêm ở B1
+
+Hiện trạng: Create_user + Create_datetime = null
+Mong muốn: Create_user + Create_datetime phải giữ nguyên như B1
+
+!clipboard-202309081346-oghpe.png!
+
+!clipboard-202309081347-arf7w.png!
+",""
+5783,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Tạo mới,Bình thường,[2.5. QLF] Thêm mới/ Cập nhật: Bỏ trống Tác động + Loại dịch vụ -> File lỗi trả về: Thừa thông báo ở cuối dòng,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 15:40,"","",07-09-2023,"","","",0.00,0.00,0,07-09-2023 11:20,"",Thu Hương Đỗ,"","clipboard-202309071120-qkbv7.png
+clipboard-202309071120-tz6nu.png",Lỗi BE,2.5. QLF - Thêm mới,,Không,"Thêm: Bỏ trống Tác động + Loại dịch vụ
+
+HT: File lỗi trả về: Thừa thông báo ở cuối dòng
+MM: Bỏ thông báo ở cuối dòng đi
+
+!clipboard-202309071120-qkbv7.png!
+
+!clipboard-202309071120-tz6nu.png!
+",""
+5685,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Tạo mới,Bình thường,[2.5. QLF] Bỏ trống các trường bắt buộc -> Thông báo lỗi chưa chính xác,Thu Hương Đỗ,Bùi Minh Tuấn,05-09-2023 13:43,"","",05-09-2023,"","","",0.00,0.00,0,05-09-2023 13:43,"","","",clipboard-202309051343-tcrvu.png,Lỗi FE,2.5. QLF,,Không,"Import file: Bỏ trống các trường bắt buộc
+
+HT: Thông báo lỗi chưa chính xác
+MM: Thông báo: ''Chưa nhập dữ liệu''
+
+!clipboard-202309051343-tcrvu.png!
+",""
+5672,PYC_4177291,Bug,5100,2.4. Thêm mới chức năng Xoá Mapping bỏ qua nợ cước v2,Tạo mới,Làm ngay,[2.4. + 2.5 XÓA MAPPING BỎ QUA NỢ CƯỚC V2] Lưu log chưa chính xác,Thu Hương Đỗ,Bùi Minh Tuấn,08-09-2023 13:16,"","",31-08-2023,"","","",0.00,0.00,0,31-08-2023 16:21,"",Thu Hương Đỗ,"","clipboard-202308311621-s8li7.png
+clipboard-202308311621-9xydm.png",Lỗi BE,2.4. XÓA MAPPING BỎ QUA NỢ CƯỚC V2,,Không,"Xóa thành công 1 bản ghi
+
+HT: ACTION_AUDIT: Sai description
+MM: Đổi thành: Xóa thông tin mapping bỏ qua nợ cước v2
+
+HT: ACTION_DETAIL: K lưu log
+MM: Bổ sung lưu log đầy đủ action_detail
+
+!clipboard-202308311621-s8li7.png!
+
+!clipboard-202308311621-9xydm.png!
+",""
+5671,PYC_4177291,Bug,5098,2.2. Thêm mới chức năng Thêm mới Mapping bỏ qua nợ cước v2,Tạo mới,Làm ngay,[2.2. + 2.5 THÊM MỚI MAPPING BỎ QUA NỢ CƯỚC V2] K lưu thông tin log trong bảng Action_detail,Thu Hương Đỗ,Bùi Minh Tuấn,08-09-2023 13:10,"","",31-08-2023,"","","",0.00,0.00,0,31-08-2023 16:12,"",Bùi Minh Tuấn,"","clipboard-202308311611-05lir.png
+clipboard-202308311612-qdpss.png
+clipboard-202309061909-kdkol.png",Lỗi BE,2.2. THÊM MỚI MAPPING BỎ QUA NỢ CƯỚC V2,,Không,"Thêm mới thành công 1 bản ghi
+
+HT: Action_detail: K lưu thông tin trường MAP_ID + STATUS
+MM: Lưu đầy đủ cả thông tin trường MAP_ID + STATUS
+
+!clipboard-202308311611-05lir.png!
+
+!clipboard-202308311612-qdpss.png!
+","update 06/09: không lưu log trong bảng action_detail
+
+!clipboard-202309061909-kdkol.png!
+"
+5670,PYC_4177291,Bug,5099,2.3. Thêm mới chức năng Cập nhật Mapping bỏ qua nợ cước v2,Tạo mới,Làm ngay,[2.3 + 2.5. CẬP NHẬT MAPPING BỎ QUA NỢ CƯỚC V2] K lưu log action_detail,Thu Hương Đỗ,Bùi Minh Tuấn,08-09-2023 13:50,"","",31-08-2023,"","","",0.00,0.00,0,31-08-2023 15:58,"",Thu Hương Đỗ,"","clipboard-202308311557-puqwl.png
+clipboard-202308311557-a0ncv.png",Lỗi BE,2.3. CẬP NHẬT MAPPING BỎ QUA NỢ CƯỚC V2,,Không,"HT: K lưu log action_detail
+MM: Lưu đầy đủ log tác động action_detail
+
+!clipboard-202308311557-puqwl.png!
+
+!clipboard-202308311557-a0ncv.png!
+",""
+5505,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Tạo mới,Bình thường,[2.5. QLF] Vị trí button Tải file mẫu chưa đúng vs thiếu kế,Thu Hương Đỗ,Bùi Minh Tuấn,28-08-2023 09:39,"","",23-08-2023,"","","",0.00,0.00,0,23-08-2023 10:19,"",Trịnh  Khánh Toàn,"",clipboard-202308231019-zcmbu.png,Lỗi FE,Vị trí button Tải file mẫu,,Không,"!clipboard-202308231019-zcmbu.png!
+",""
+5802,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,"[2.5. QLF] Cập nhật 1 bản ghi, K update thông tin vào bản ghi đã import mà thêm mới 1 bản ghi mới",Thu Hương Đỗ,Bùi Minh Tuấn,08-09-2023 11:56,"","",08-09-2023,"","","",0.00,0.00,0,08-09-2023 09:23,08-09-2023 11:56,Thu Hương Đỗ,"","clipboard-202309080923-alpqe.png
+clipboard-202309080923-zbpp2.png",Lỗi BE,2.5. QLF,,Không,"Cập nhật 1 bản ghi
+
+HT: K update thông tin vào bản ghi đã import mà thêm mới 1 bản ghi mới
+MM: Phải update thông tin vào bản ghi đã import
+
+!clipboard-202309080923-alpqe.png!
+
+!clipboard-202309080923-zbpp2.png!
+",""
+5801,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Thêm mới: Nhập Trạng thái = 0 -> Bản ghi vừa import có status = 0,Thu Hương Đỗ,Bùi Minh Tuấn,08-09-2023 13:53,"","",07-09-2023,"","","",0.00,0.00,0,07-09-2023 18:26,08-09-2023 13:53,Thu Hương Đỗ,"","clipboard-202309071826-sonhb.png
+clipboard-202309071826-o7f60.png
+clipboard-202309081146-nz48c.png
+clipboard-202309081147-uollp.png",Lỗi BE,2.5. QLF - Thêm mới,1,Không,"Thêm mới: Nhập Trạng thái = 0
+
+HT: Bản ghi vừa import có status = 0
+MM: Bản ghi vừa import phải có staus = 1
+
+!clipboard-202309071826-sonhb.png!
+
+!clipboard-202309071826-o7f60.png!
+","**UPDATE:*
+
+!clipboard-202309081146-nz48c.png!
+!clipboard-202309081147-uollp.png!
+"
+5798,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Export: Nhập Mã cửa hàng và Mã nhân viên -> ile export trả về k theo đk đã import,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 18:30,"","",07-09-2023,"","","",0.00,0.00,0,07-09-2023 17:33,07-09-2023 18:30,Thu Hương Đỗ,"","clipboard-202309071733-2fa8n.png
+clipboard-202309071733-b4aee.png",Lỗi BE,2.5. QLF - Export,,Không,"Export: Nhập Mã cửa hàng và Mã nhân viên
+
+HT: File export trả về k theo đk đã import
+MM: Trả về đúng theo đk đã import
+
+!clipboard-202309071733-2fa8n.png!
+
+!clipboard-202309071733-b4aee.png!
+",""
+5794,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Cập nhật/ Export: Nhập Id mapping khác định dạng số -> Báo lỗi hệ thống,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 16:46,"","",07-09-2023,"","","",0.00,0.00,0,07-09-2023 16:04,07-09-2023 16:46,Thu Hương Đỗ,"","clipboard-202309071604-ruext.png
+clipboard-202309071604-aq4m2.png",Lỗi BE,2.5. QLF - Cập nhật/ Export,,Không,"Cập nhật/ Export: Nhập Id mapping khác định dạng số
+
+HT: Báo lỗi hệ thống
+MM: Thông báo lỗi trong file trả về: ''Id mapping không tồn tại''
+
+-> Với: Xoá/Cập nhật/export, nếu nhập Id không tồn tại thì trả về lỗi trong file trả về: '' Id mapping không tồn tại''
+
+!clipboard-202309071604-ruext.png!
+
+!clipboard-202309071604-aq4m2.png!
+",""
+5792,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Thêm mới: Nhập Trạng thái khác 0.1 -> Báo lỗi ,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 16:49,"","",07-09-2023,"","","",0.00,0.00,0,07-09-2023 15:24,07-09-2023 16:49,Thu Hương Đỗ,"",clipboard-202309071524-gf35s.png,Lỗi BE,2.5. QLF -Thêm mới,,Không,"Thêm mới: Nhập Trạng thái khác 0.1
+
+HT: Báo lỗi trường Trạng thái
+MM: K báo lỗi trường Trạng thái
+-> Validate Trạng thái nhập khác 0.1 chỉ áp dụng với CẬP NHẬT/EXPORT
+
+!clipboard-202309071524-gf35s.png!
+",""
+5786,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Thêm mới: Nhập Mã cửa hàng hợp lệ -> Thông tin lưu DB: Shop_id  = null,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 14:53,"","",07-09-2023,"","","",0.00,0.00,0,07-09-2023 13:54,07-09-2023 14:53,Thu Hương Đỗ,"","clipboard-202309071354-dltbu.png
+clipboard-202309071354-dg281.png",Lỗi BE,2.5. QLF - Thêm mới,,Không,"Thêm mới: Nhập Mã cửa hàng hợp lệ
+
+HT: Thông tin lưu DB chưa chính xác: Shop_id = null
+MM: Lưu đúng thông tin
+
+!clipboard-202309071354-dltbu.png!
+
+!clipboard-202309071354-dg281.png!
+",""
+5785,PYC_4177291,Bug,"","",Hoàn Thành,Làm ngay,[2.5. QLF] Cập nhật: Bỏ trống Trạng thái -> Báo import thành công,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 14:57,"","",07-09-2023,"","","",0.00,0.00,0,07-09-2023 11:44,07-09-2023 14:57,Thu Hương Đỗ,"","clipboard-202309071144-6cwft.png
+clipboard-202309071144-p2cdx.png",Lỗi BE,2.5. QLF - Cập nhật,,Không,"Cập nhật: Bỏ trống Trạng thái 
+
+HT: Thông báo import thành công
+MM: Thông báo lỗi tại trường Trạng thái trong file trả về: 
+        ''Chưa nhập dữ liệu''
+
+-> Validate bỏ trống trường trạng thái chỉ áp dụng với Thao tác Cập nhật
+
+!clipboard-202309071144-6cwft.png!
+
+!clipboard-202309071144-p2cdx.png!
+",""
+5781,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Cập nhật bản ghi k hoạt động -> Thông báo lỗi Id mapping k tồn tại,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 14:58,"","",07-09-2023,"","","",0.00,0.00,0,07-09-2023 11:04,07-09-2023 14:58,Thu Hương Đỗ,"","clipboard-202309071104-mewau.png
+clipboard-202309071104-sceli.png",Lỗi BE,2.5. QLF,,Không,"Cập nhật bản ghi k hoạt động
+
+HT: Thông báo lỗi Id mapping k tồn tại
+MM: Cho phép cập nhật bản ghi k hoạt động
+
+!clipboard-202309071104-mewau.png!
+
+!clipboard-202309071104-sceli.png!
+",""
+5779,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,"[2.5. QLF] Cập nhật: Nhập Mã cửa hàng, Mã nhân viên hợp lệ -> Thông tin lưu DB: Shop_id và Staff_id = null",Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 14:56,"","",07-09-2023,"","","",0.00,0.00,0,07-09-2023 10:57,07-09-2023 14:56,Thu Hương Đỗ,"","clipboard-202309071057-et6ms.png
+clipboard-202309071057-absip.png",Lỗi BE,2.5. QLF - Cập nhật,,Không,"Cập nhật: Nhập Mã cửa hàng, Mã nhân viên hợp lệ
+
+HT: Thông tin lưu DB chưa chính xác: Shop_id và Staff_id = null
+MM: Lưu đúng thông tin
+
+!clipboard-202309071057-et6ms.png!
+
+!clipboard-202309071057-absip.png!
+",""
+5774,PYC_4177291,Bug,"","",Hoàn Thành,Làm ngay,[2.5. QLF] Thêm mới: Bỏ trống các trường bắt buộc -> Báo lỗi hệ thống,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 11:16,"","",07-09-2023,"","","",0.00,0.00,0,07-09-2023 09:49,07-09-2023 11:16,Thu Hương Đỗ,"","clipboard-202309070947-3jgmh.png
+clipboard-202309070947-avmd2.png",Lỗi BE,2.5. QLF - Thêm mới,,Không,"Thêm mới: Bỏ trống các trường bắt buộc
+
+HT: Báo lỗi hệ thống
+MM: Thông báo lỗi bỏ trống tại mỗi trường bắt buộc:
+     ''Chưa nhập dữ liệu''
+
+!clipboard-202309070947-3jgmh.png!
+
+!clipboard-202309070947-avmd2.png!
+",""
+5770,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Cập nhật: Nhập hợp lệ các trường -> Báo lỗi trường trạng thái,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 10:45,"","",06-09-2023,"","","",0.00,0.00,0,06-09-2023 18:57,07-09-2023 10:45,Thu Hương Đỗ,"",clipboard-202309061856-uobv7.png,Lỗi BE,2.5. QLF - Cập nhật,,Không,"Cập nhật: Nhập hợp lệ các trường
+
+HT: Báo lỗi trường trạng thái
+MM: K báo lỗi. Update thông tin vào DB
+
+!clipboard-202309061856-uobv7.png!
+",""
+5768,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Export: Nhập hợp lệ các trường -> Báo lỗi trường Mã tác động k tồn tại,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 11:50,"","",06-09-2023,"","","",0.00,0.00,0,06-09-2023 18:10,07-09-2023 11:50,Thu Hương Đỗ,"","clipboard-202309061810-fzrqy.png
+clipboard-202309061810-qgjjb.png",Lỗi BE,xport,,Không,"Export: Nhập hợp lệ các trường
+
+HT: Báo lỗi trường Mã tác động k tồn tại
+MM: Trả về file export thỏa mãn
+
+!clipboard-202309061810-fzrqy.png!
+
+!clipboard-202309061810-qgjjb.png!
+",""
+5760,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Export: Nhập Mã nhân viên/ Mã cửa hàng k tồn tại hoặc k hoạt động -> Báo lỗi,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 13:15,"","",06-09-2023,"","","",0.00,0.00,0,06-09-2023 15:31,07-09-2023 13:15,Thu Hương Đỗ,"",clipboard-202309061528-fjauq.png,Lỗi BE,2.5. QLF - Export,,Không,"Export: Nhập Mã nhân viên/ Mã cửa hàng k tồn tại hoặc k hoạt động
+
+HT: Báo lỗi Mã nhân viên/ mã cửa hàng k tồn tại hoặc k hoạt động
+MM: K validate Mã nhân viên/ mã cửa hàng k tồn tại hoặc k hoạt động
+
+!clipboard-202309061528-fjauq.png!
+",""
+5758,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Export: Bỏ trống Trạng thái -> Báo lỗi bỏ trống Trạng thái tại trường Loại dịch vụ,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 13:18,"","",06-09-2023,"","","",0.00,0.00,0,06-09-2023 15:13,07-09-2023 13:18,Thu Hương Đỗ,"","clipboard-202309061513-zwqw9.png
+clipboard-202309061513-h5tdw.png",Lỗi BE,QLF - Export,,Không,"Export: Bỏ trống Trạng thái
+
+HT: Báo lỗi bỏ trống Trạng thái tại trường Loại dịch vụ
+MM: K báo lỗi bỏ trống. Trả về fiel export thỏa mãn
+
+!clipboard-202309061513-zwqw9.png!
+
+!clipboard-202309061513-h5tdw.png!
+",""
+5756,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Xóa/ Export: Nhập Ngày hết hạn/ Ngày hiệu lực k tồn tại -> Import thành công,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 13:26,"","",06-09-2023,"","","",0.00,0.00,0,06-09-2023 14:05,07-09-2023 13:26,Thu Hương Đỗ,"","clipboard-202309061404-gzmg7.png
+clipboard-202309061404-lqpwj.png
+clipboard-202309061404-kpeql.png
+clipboard-202309061405-jq1ui.png",Lỗi BE,2.5. QLF- Xóa/ Export,,Không,"Xóa/ Export: Nhập Ngày hết hạn/ Ngày hiệu lực k tồn tại 
+
+HT: Xóa/ Export thành công
+MM: Thông báo lỗi trong file trả về:
+      - Ngày hiệu lực không hợp lệ
+      - Ngày hết hạn không hợp lệ
+
+!clipboard-202309061404-gzmg7.png!
+!clipboard-202309061404-lqpwj.png!
+
+!clipboard-202309061404-kpeql.png!
+!clipboard-202309061405-jq1ui.png!
+",""
+5753,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Cập nhật: Bỏ trống ÌD mapping -> Báo lỗi hệ thống,Thu Hương Đỗ,Bùi Minh Tuấn,06-09-2023 15:52,"","",06-09-2023,"","","",0.00,0.00,0,06-09-2023 12:02,06-09-2023 15:52,Thu Hương Đỗ,"","clipboard-202309061202-opzeh.png
+clipboard-202309061202-1ehbz.png",Lỗi BE,2.5. QLF,,Không,"Cập nhật: Bỏ trống ÌD mapping
+
+HT: Báo lỗi hệ thống
+MM: Thông báo lỗi tại trường ID mapping trong file trả về:
+         ''Chưa nhập dữ liệu''
+
+!clipboard-202309061202-opzeh.png!
+
+!clipboard-202309061202-1ehbz.png!
+",""
+5751,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,"[2.5. QLF] Cập nhật: Nhập Số giấy tờ, Số hợp đồng, Mã IBM, Người phê duyệt > 100kt -> Import thành công",Thu Hương Đỗ,Bùi Minh Tuấn,06-09-2023 16:00,"","",06-09-2023,"","","",0.00,0.00,0,06-09-2023 11:45,06-09-2023 16:00,Thu Hương Đỗ,"","clipboard-202309061145-qflbl.png
+clipboard-202309061145-gapzg.png",Lỗi BE,2.5. QLF,,Không,"Cập nhật: Nhập Số giấy tờ, Số hợp đồng, Mã IBM, Người phê duyệt > 100kt
+
+HT: Import thành công. update thông tin vào DB
+MM: Thông báo lỗi trong file trả về:
+        - Số giấy tờ không được vượt quá 100 ký tự
+        - Số hợp đồng không được vượt quá 100 ký tự
+        - Mã IBM không được vượt quá 100 ký tự
+        - Người phê duyệt không được vượt quá 100 ký tự
+
+!clipboard-202309061145-qflbl.png!
+
+!clipboard-202309061145-gapzg.png!
+",""
+5750,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,"[2.5. QLF] Cập nhật: Nhập ID mapping k tồn tại , Tác động/ Loại dịch vụ/ Cửa hàng/  Nhân viên k tồn tại hoặc k hoạt động -> Import thành công",Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 13:37,"","",06-09-2023,"","","",0.00,0.00,0,06-09-2023 11:32,07-09-2023 13:37,Thu Hương Đỗ,"","clipboard-202309061131-pajal.png
+clipboard-202309061131-dhvk2.png",Lỗi BE,2.5. QLF,,Không,"Cập nhật: Nhập 
+ID mapping k tồn tại
+                         Tác động k tồn tại hoặc k hoạt động
+                          Loại dịch vụ k tồn tại hoặc k hoạt động
+                          Cửa hàng k tồn tại hoặc k hoạt động
+                          Nhân viên k tồn tại hoặc k hoạt động
+
+HT: Import thành công. update thông tin vào DB
+MM: Thông báo lỗi trong file trả về:
+        - Id mapping không tồn tại
+        - Mã tác động không tồn tại hoặc không hoạt động
+        - Loại dịch vụ không tồn tại hoặc không hoạt động
+         - Mã cửa hàng không tồn tại hoặc không hoạt động
+       - Mã nhân viên không tồn tại hoặc không hoạt động 
+!clipboard-202309061131-pajal.png!
+
+!clipboard-202309061131-dhvk2.png!
+",""
+5743,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Nhập Ngày hiệu lực > Ngày hết hạn -> Import thành công,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 11:39,"","",06-09-2023,"","","",0.00,0.00,0,06-09-2023 09:56,07-09-2023 11:39,Thu Hương Đỗ,"","clipboard-202309060956-pmvyz.png
+clipboard-202309060956-xnnnb.png",Lỗi BE,2.5. QLF,,Không,"Import : Nhập Ngày hiệu lực > Ngày hết hạn
+
+HT: Import thành công. Insert thông tin vào DB
+MM: Thông báo lỗi trong file trả về:
+                 - ''Ngày hiệu lực phải nhỏ hơn hoặc bằng Ngày hết hạn''
+
+!clipboard-202309060956-pmvyz.png!
+
+!clipboard-202309060956-xnnnb.png!
+",""
+5707,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Thêm mới/ cập nhật: Nhập Mã cửa hàng k hoạt động -> Import thành công,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 11:38,"","",06-09-2023,"","","",0.00,0.00,0,06-09-2023 09:32,07-09-2023 11:38,Thu Hương Đỗ,"","clipboard-202309060932-zmivf.png
+clipboard-202309060932-5ng97.png
+clipboard-202309060932-umtxc.png",Lỗi BE,2.5. QLF,,Không,"Nhập Mã cửa hàng k hoạt động
+
+HT: Import thành công. Insert thông tin vào DB
+MM: Thông báo lỗi trong file trả về:
+          ''Mã cửa hàng không tồn tại hoặc không hoạt động''
+
+!clipboard-202309060932-zmivf.png!
+
+!clipboard-202309060932-5ng97.png!
+
+!clipboard-202309060932-umtxc.png!
+",""
+5706,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Nhập Ngày hết hạn k tồn tại -> Import thành công,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 11:38,"","",06-09-2023,"","","",0.00,0.00,0,06-09-2023 09:22,07-09-2023 11:38,Thu Hương Đỗ,"","clipboard-202309060922-hdmyg.png
+clipboard-202309060922-uciqk.png",Lỗi BE,2.5. QLF,,Không,"Nhập Ngày hết hạn k tồn tại
+
+HT: Import thành công. Insert thông tin vào DB
+MM: Thông báo lỗi trong file trả về:
+          ''Ngày hết hạn không hợp lệ''
+
+!clipboard-202309060922-hdmyg.png!
+
+!clipboard-202309060922-uciqk.png!
+",""
+5703,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Import thành công. Status + Product_code của bản ghi vừa import đang = null,Thu Hương Đỗ,Bùi Minh Tuấn,05-09-2023 17:47,"","",05-09-2023,"","","",0.00,0.00,0,05-09-2023 17:26,05-09-2023 17:47,Thu Hương Đỗ,"","clipboard-202309051726-cut41.png
+clipboard-202309051726-ddpbe.png",Lỗi BE,2.5. QLF,,Không,"Nhập hợp lệ tất cả các trường
+
+HT: Import thành công. Status + Product_code của bản ghi vừa import đang = null
+MM: Lưu status = 1 +  PRODUCT_CODE =  -1 (Gói cước)
+
+!clipboard-202309051726-cut41.png!
+
+!clipboard-202309051726-ddpbe.png!
+",""
+5689,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Export: Nhập hợp lệ tất cả các trường -> Báo lỗi trường Tác động k tồn tại,Thu Hương Đỗ,Bùi Minh Tuấn,06-09-2023 15:04,"","",05-09-2023,"","","",0.00,0.00,0,05-09-2023 14:21,06-09-2023 15:04,Thu Hương Đỗ,"","clipboard-202309051421-vw0jh.png
+clipboard-202309051421-oicnm.png",Lỗi BE,2.5. QLF,,Không,"Export: Nhập hợp lệ tất cả các trường
+
+HT: Báo lỗi trường Tác động k tồn tại
+MM: Trả về file export thỏa mãn
+
+!clipboard-202309051421-vw0jh.png!
+
+!clipboard-202309051421-oicnm.png!
+",""
+5688,PYC_4177291,Bug,"","",Hoàn Thành,Làm ngay,"[2.5. QLF] Thêm mới + Cập nhật: Bỏ trống Mã cửa hàng, nhập Mã nhân viên -> Báo lỗi bỏ trống Mã nhân viên",Thu Hương Đỗ,Bùi Minh Tuấn,05-09-2023 17:32,"","",05-09-2023,"","","",0.00,0.00,0,05-09-2023 14:00,05-09-2023 17:32,Thu Hương Đỗ,"","clipboard-202309051400-llgjp.png
+clipboard-202309051400-mayvk.png",Lỗi BE,2.5. QLF,,Không,"Import file: Bỏ trống Mã cửa hàng. Nhập Mã nhân viên
+
+HT: Báo lỗi bỏ trống Mã nhân viên
+MM: K thông báo lỗi bỏ trống Mã nhân viên
+
+!clipboard-202309051400-llgjp.png!
+
+!clipboard-202309051400-mayvk.png!
+",""
+5686,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Bình thường,[2.5. QLF] Nhập Ngày hiệu lực + Ngày hết hạn k đúng định dạng -> Thông báo lỗi chưa chính xác,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 11:37,"","",05-09-2023,"","","",0.00,0.00,0,05-09-2023 13:51,07-09-2023 11:37,Thu Hương Đỗ,"",clipboard-202309051351-m9dig.png,Lỗi FE,2.5. QLF,,Không,"Nhập Ngày hiệu lực + Ngày hết hạn k đúng định dạng ( or k tồn tại)
+
+HT: Thông báo lỗi chưa chính xác
+MM: Thông báo: - Ngày hiệu lực không hợp lệ
+                          - Ngày hết hạn không hợp lệ
+
+!clipboard-202309051351-m9dig.png!
+",""
+5684,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Nhập hợp lệ tất cả các trường -> Báo lỗi hệ thống,Thu Hương Đỗ,Bùi Minh Tuấn,05-09-2023 17:22,"","",05-09-2023,"","","",0.00,0.00,0,05-09-2023 13:30,05-09-2023 17:22,Thu Hương Đỗ,"","clipboard-202309051330-bhybd.png
+clipboard-202309051330-wwgf6.png
+clipboard-202309051503-63r0s.png
+clipboard-202309051503-mkxwz.png",Lỗi BE,2.5. QLF,1,Không,"Nhập hợp lệ tất cả các trường
+
+HT: Báo lỗi Loại dịch vụ k tồn tại
+MM: Import thành công. Lưu thông tin vào DB
+
+!clipboard-202309051330-bhybd.png!
+
+!clipboard-202309051330-wwgf6.png!
+","*UPDATE*
+
+!clipboard-202309051503-63r0s.png!
+!clipboard-202309051503-mkxwz.png!
+"
+5668,PYC_4177291,Bug,5098,2.2. Thêm mới chức năng Thêm mới Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay,[2.2. THÊM MỚI MAPPING BỎ QUA NỢ CƯỚC V2] Bản ghi thêm thành công có trạng thái = Hết hiệu lực,Thu Hương Đỗ,Bùi Minh Tuấn,31-08-2023 17:17,"","",31-08-2023,"","","",0.00,0.00,0,31-08-2023 13:11,31-08-2023 17:17,Thu Hương Đỗ,"","clipboard-202308311310-11bdx.png
+clipboard-202308311310-zmt80.png
+clipboard-202308311310-km3wk.png",Lỗi BE,THÊM MỚI MAPPING BỎ QUA NỢ CƯỚC V2,,Không,"Thêm mới 1 bản ghi hợp lệ
+
+HT: Bản ghi vừa thêm có trạng thái Hết hiệu lực
+MM: Bản ghi thêm thành công phải có trạng thái = Hiệu lực
+
+!clipboard-202308311310-11bdx.png!
+
+!clipboard-202308311310-zmt80.png!
+
+!clipboard-202308311310-km3wk.png!
+",""
+5664,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Thêm mới: Nhập Ngày hiệu lực < Ngày hiện tại -> Import thành công,Thu Hương Đỗ,Bùi Minh Tuấn,05-09-2023 15:42,"","",30-08-2023,"","","",0.00,0.00,0,30-08-2023 15:49,05-09-2023 15:42,Thu Hương Đỗ,"","clipboard-202308301549-6ijem.png
+clipboard-202308301549-krp8k.png",Lỗi BE,2.5 Thêm mới,,Không,"Thêm mới: Nhập Ngày hiệu lực < Ngày hiện tại
+
+HT: Import thành công. Lưu thông tin DB
+MM: Thông báo lỗi trong file trả về: ''Ngày hiệu lực phải lớn hơn hoặc bằng Ngày hiện tại''
+
+!clipboard-202308301549-6ijem.png!
+
+!clipboard-202308301549-krp8k.png!
+",""
+5616,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Export: Thông tin các trường Tác động + Loại dịch vụ  chưa chính xác,Thu Hương Đỗ,Bùi Minh Tuấn,06-09-2023 16:53,"","",28-08-2023,"","","",0.00,0.00,0,28-08-2023 15:57,06-09-2023 16:53,Thu Hương Đỗ,"","clipboard-202308281556-zpabm.png
+clipboard-202309060911-sgqzx.png
+clipboard-202309061433-wyuvn.png",Lỗi FE,2.5. TM_QLF_T/S/X/E_MBQNC_25,1,Không,"File export trả về:
+
+HT: Thông tin các trường Tác động + Loại dịch vụ + Gói cước + Ngày hiệu lực + Ngày hết hạn + Cửa hàng + Nhân viên + Trạng thái + Ngày cập nhật chưa chính xác
+
+MM: Thông tin chính xác:
+- Tác động:  select action_code || ' - ' || name from action a where action_code = (select action_code from MAP_BUSINESS_SKIP_DEBT where map_id = :map_id);   
+- Loại dịch vụ: select telecom_service_id || ' - ' || name from telecom_service t where telecom_service_id = (select telecom_service_id from MAP_BUSINESS_SKIP_DEBT where map_id = :map_id); 
+-  Gói cước: Select decode(product_code,'-1','Tất cả', product_code) from MAP_BUSINESS_SKIP_DEBT where map_id = :map_id;
+- Ngày hiệu lực: Định dạng: dd/mm/yyyy (k hiển thị giờ phút giây)
+- Ngày hết hạn: Định dạng: dd/mm/yyyy (k hiển thị giờ phút giây)
+- Cửa hàng: select shop_code || ' - ' || name from shop where shop_id = (select shop_id from MAP_BUSINESS_SKIP_DEBT where map_id = :map_id);
+- Nhân viên: select staff_code|| ' - ' || name from staff where staff_id = (select staff_id from MAP_BUSINESS_SKIP_DEBT where map_id = :map_id);
+- Trạng thái: Hiệu lực/ Không hiệu lực
+- Ngày cập nhật: Định dạng: dd/mm/yyyy (k hiển thị giờ phút giây)
+
+!clipboard-202309060911-sgqzx.png!
+","*UPDATE:*
+
+!clipboard-202309061433-wyuvn.png!
+"
+5614,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Export: Bỏ trống Tác động -> Báo lỗi hệ thống,Thu Hương Đỗ,Bùi Minh Tuấn,06-09-2023 15:02,"","",28-08-2023,"","","",0.00,0.00,0,28-08-2023 15:28,06-09-2023 15:02,Thu Hương Đỗ,"","clipboard-202308281527-a7my3.png
+clipboard-202308281527-mphxa.png",Lỗi BE,2.5. TM_QLF_T/S/X/E_MBQNC_26,,Không,"Export: Bỏ trống Tác động. các trường khác nhập hợp lệ
+
+HT: Lỗi hệ thống
+MM: Trả về file export thỏa mãn đk đã import
+
+!clipboard-202308281527-a7my3.png!
+
+!clipboard-202308281527-mphxa.png!
+",""
+5612,PYC_4177291,Bug,5098,2.2. Thêm mới chức năng Thêm mới Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay,[2.2. Thêm mới chức năng Thêm mới Mapping bỏ qua nợ cước v2] Nhập Ngày hiệu lực > Ngày hết hạn-> Báo lỗi sai,Hải Đồng,Bùi Minh Tuấn,31-08-2023 15:12,"","",28-08-2023,"","","",0.00,0.00,0,28-08-2023 14:58,31-08-2023 15:12,Thu Hương Đỗ,"",clipboard-202308281458-hptkt.png,Lỗi BE,2.3,,Không,"!clipboard-202308281458-hptkt.png!
+",""
+5609,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Export: File export trả về k đúng theo đk đã import,Thu Hương Đỗ,Bùi Minh Tuấn,08-09-2023 11:59,"","",28-08-2023,"","","",0.00,0.00,0,28-08-2023 14:28,08-09-2023 11:59,Thu Hương Đỗ,"","clipboard-202308281427-hywk3.png
+clipboard-202308281427-x5jhr.png
+clipboard-202308281427-xk8sl.png
+clipboard-202308281547-d29t3.png
+clipboard-202308281547-1lqjj.png
+clipboard-202308281547-bsoqg.png
+clipboard-202309061540-hfjdg.png
+clipboard-202309061540-eiexy.png
+clipboard-202309061540-camdo.png
+clipboard-202309071838-psbpv.png
+clipboard-202309071839-0uf0w.png
+clipboard-202309071839-o2bge.png",Lỗi BE,2.5. TM_QLF_T/S/X/E_MBQNC_44,1,Không,"Export: Nhập hợp lệ các trường
+-> Kiể tra db K có kết quả thỏa mãn đk đã import
+
+HT: Vẫn trả về file export
+  -> Bản ghi trả về có khoảng thời gian hiệu lực khác vs đk đã import
+MM: Thông báo: Không có dữ liệu để export
+
+!clipboard-202309061540-hfjdg.png!
+
+!clipboard-202309061540-eiexy.png!
+
+!clipboard-202309061540-camdo.png!
+","*UPDATE:* REOPEN
+
+!clipboard-202309071838-psbpv.png!
+!clipboard-202309071839-0uf0w.png!
+!clipboard-202309071839-o2bge.png!
+"
+5605,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Export: Nhập Loại dịch vụ k tồn tại (or k hoạt động) -> Trả về file lỗi nhưng trong file k thông báo lỗi,Thu Hương Đỗ,Bùi Minh Tuấn,06-09-2023 14:48,"","",28-08-2023,"","","",0.00,0.00,0,28-08-2023 11:39,06-09-2023 14:48,Thu Hương Đỗ,"",clipboard-202308281139-48y9j.png,Lỗi BE,2.5. TM_QLF_T/S/X/E_MBQNC_14,,Không,"Export: Nhập Loại dịch vụ k tồn tại hoặc k hoạt động
+
+HT: Trả về file lỗi nhưng trong file k thông báo lỗi
+MM: Thông báo lỗi:
+       ''Loại dịch vụ không tồn tại hoặc không hoạt động''
+
+!clipboard-202308281139-48y9j.png!
+",Chuyển sang bug #5603
+5603,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,"[2.5. QLF] Export: Nhập Tác động/ Loại dịch vụ k tồn tại (or k hoạt động) , Trạng thái khác 0,1 -> Import thành công",Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 14:08,"","",28-08-2023,"","","",0.00,0.00,0,28-08-2023 11:29,07-09-2023 14:08,Thu Hương Đỗ,"","clipboard-202308281128-dn5lq.png
+clipboard-202308281128-ubjwt.png
+clipboard-202309061445-shvfu.png
+clipboard-202309061447-bo6v3.png",Lỗi BE,2.5. TM_QLF_T/S/X/E_MBQNC_13,,Không,"Export: 
+- Nhập Tác động k tồn tại hoặc k hoạt động
+- Nhập Loại dịch vụ k tồn tại hoặc k hoạt động
+           - Nhập Trạng thái khác 0,1
+
+HT: Import thành công
+MM: Thông báo lỗi trong file trả về:
+       - ''Mã tác động không tồn tại hoặc không hoạt động''
+- ''Loại dịch vụ không tồn tại hoặc không hoạt động'' 
+       - ''Trạng thái nhập vào không hợp lệ''
+
+!clipboard-202308281128-dn5lq.png!
+
+!clipboard-202309061445-shvfu.png!
+
+!clipboard-202309061447-bo6v3.png!
+",""
+5597,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Export: Báo lỗi bỏ trống Id mapping + Tác động + Loại dịch vụ,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 13:28,"","",28-08-2023,"","","",0.00,0.00,0,28-08-2023 10:42,07-09-2023 13:28,Thu Hương Đỗ,"","clipboard-202308281041-wslw3.png
+clipboard-202309061502-bputo.png",Lỗi BE,2.5. TM_QLF_T/S/X/E_MBQNC_12,,Không,"Export: Bỏ trống Id mapping + Tác động + Loại dịch vụ
+
+HT: Thông báo lỗi bỏ trống
+MM: K báo lỗi bỏ trống
+       -> Với thao tác export: K validate bỏ trống các trường
+
+!clipboard-202309061502-bputo.png!
+",""
+5593,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Export: Template file export trả về chưa chính xác,Thu Hương Đỗ,Bùi Minh Tuấn,28-08-2023 14:20,"","",27-08-2023,"","","",0.00,0.00,0,27-08-2023 22:52,28-08-2023 14:20,Thu Hương Đỗ,"","clipboard-202308272251-www7n.png
+clipboard-202308272252-6qecl.png
+clipboard-202308272300-tztin.png",Lỗi BE,QLF_EXPORT,,Không,"HT: Template file export trả về chưa chính xác
+MM: Template file export phải giống với TLGP
+
+!clipboard-202308272251-www7n.png!
+
+!clipboard-202308272252-6qecl.png!
+
+!clipboard-202308272300-tztin.png!
+",""
+5590,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Export: Nhập Ngày hiệu lực > Ngày hết hạn -> Báo lỗi,Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 13:48,"","",25-08-2023,"","","",0.00,0.00,0,25-08-2023 17:55,07-09-2023 13:48,Thu Hương Đỗ,"","clipboard-202308251754-q4uli.png
+clipboard-202308251755-atjga.png
+clipboard-202308281450-nqmd7.png",Lỗi BE,2.5. TM_QLF_T/S/X/E_MBQNC_45,1,Không,"*bug 1:*
+Exxport: Nhập Ngày hiệu lực > Ngày hết hạn
+HT: Thông báo lỗi
+MM: Với export k validate Nhập Ngày hiệu lực > Ngày hết hạn
+
+*bug2:*
+Exxport: Nhập Ngày hiệu lực < Ngày hiện tại
+HT: Thông báo lỗi
+MM: Với export k validate Ngày hiệu lực < Ngày hiện tại
+
+!clipboard-202308251754-q4uli.png!
+
+!clipboard-202308251755-atjga.png!
+","*UPDATE:*
+
+Nhập Ngày hiệu lực < Ngày hiện tại -> *OK*
+Nhập Ngày hiệu lực > Ngày hết hạn -> *NOK*
+
+!clipboard-202308281450-nqmd7.png!
+"
+5588,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Export: K có bản ghi thảo mãn nhưng k báo lỗi,Thu Hương Đỗ,Bùi Minh Tuấn,06-09-2023 15:10,"","",25-08-2023,"","","",0.00,0.00,0,25-08-2023 17:15,06-09-2023 15:10,Thu Hương Đỗ,"","clipboard-202308251713-jwjvg.png
+clipboard-202308251714-4pqeh.png
+clipboard-202308251714-hvd3v.png",Lỗi BE,2.5. TM_QLF_T/S/X/E_MBQNC_45,,Không,"Export: Nhập hợp lệ tất cả các trường
+
+Hiện Trạng: Import thành công
+Mong muốn: Thông báo : 'Không tìm thấy bản ghi mapping''
+
+!clipboard-202308251713-jwjvg.png!
+
+!clipboard-202308251714-4pqeh.png!
+
+!clipboard-202308251714-hvd3v.png!
+",""
+5587,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Xóa: Nhập ID mapping hợp lệ. các trường khác nhập k hợp lệ -> Xóa k thành công,Thu Hương Đỗ,Bùi Minh Tuấn,05-09-2023 18:06,"","",25-08-2023,"","","",0.00,0.00,0,25-08-2023 16:59,05-09-2023 18:06,Thu Hương Đỗ,"","clipboard-202308251657-nro8g.png
+clipboard-202308251659-xttrb.png
+clipboard-202309051559-ksori.png",Lỗi BE,2.5. TM_QLF_T/S/X/E_MBQNC_46,,Không,"Xóa: Nhập ID mapping hợp lệ. các trường khác nhập k hợp lệ
+
+HT: Xóa k thành công. Thông báo lỗi
+MM: Xóa thành công
+ 
+-> Với thao tác XÓA: chỉ validate trường ID mapping và validate nhập Ngày hiệu lực + Ngày hết hạn đúng định dạng. Các trường còn lại k validate
+
+!clipboard-202309051559-ksori.png!
+
+!clipboard-202308251659-xttrb.png!
+",""
+5575,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Xóa: Nhập ID mapping hết hiệu lực hoặc k tồn tại - > Import thành công,Thu Hương Đỗ,Bùi Minh Tuấn,08-09-2023 11:35,"","",25-08-2023,"","","",0.00,0.00,0,25-08-2023 13:37,08-09-2023 11:35,Thu Hương Đỗ,"","clipboard-202308251335-glgfg.png
+clipboard-202308251336-elcpo.png
+clipboard-202309051800-edmiw.png
+clipboard-202309051801-8lsbg.png
+clipboard-202309051801-h0ek7.png
+clipboard-202309071750-wq3uh.png
+clipboard-202309071750-bswie.png",Lỗi BE,2.5. TM_QLF_T/S/X/E_MBQNC_47,,Không,"Xóa: Nhập ID mapping hết hiệu lực hoặc k tồn tại
+
+HT: Import thành công
+
+MM: Với thao tác xóa: Validate ID mapping có tồn tại hay k:
+ - K tồn tại : Thông báo lỗi: ''Id mapping không tồn tại'' 
+ - Có tồn tại: 
++ Nếu bản ghi có hiệu lực : Xóa thành công 
++ Nếu bản ghi hết hiệu lực : Thông báo lỗi: ''Không xoá được bản ghi mapping hết hiệu lực''
+
+!clipboard-202309051800-edmiw.png!
+
+!clipboard-202309051801-8lsbg.png!
+
+!clipboard-202309051801-h0ek7.png!
+",""
+5570,PYC_4177291,Bug,5099,2.3. Thêm mới chức năng Cập nhật Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay,"[2.3. Thêm mới chức năng Cập nhật Mapping bỏ qua nợ cước v2] để trống 3 trường Tác động, Loại dịch vụ, Ngày hiệu lực -> Nhấn btn Cập nhật-> Hiển thị value cũ",Hải Đồng,Bùi Minh Tuấn,28-08-2023 13:36,"","",25-08-2023,"","","",0.00,0.00,0,25-08-2023 10:52,28-08-2023 13:36,Trịnh  Khánh Toàn,"","clipboard-202308251052-k9nyj.png
+clipboard-202308251052-v7dl9.png
+clipboard-202308251052-x3yqa.png",Lỗi FE,2.3,,Không,"!clipboard-202308251052-k9nyj.png!
+!clipboard-202308251052-v7dl9.png!
+!clipboard-202308251052-x3yqa.png!
+",@haidv a Lương bảo bug này k sửa được tại vì nó để type là bắt buộc nên khi validate mà không có giá trị thì nó tự động back về giá trị cũ
+5569,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Thêm mới/ cập nhật: Nhập Mã IBM = 100 ký tự -> Import thành công nhưng k lưu thông tin vào DB,Thu Hương Đỗ,Bùi Minh Tuấn,30-08-2023 10:06,"","",25-08-2023,"","","",0.00,0.00,0,25-08-2023 10:52,30-08-2023 10:06,Thu Hương Đỗ,"","clipboard-202308251051-9frua.png
+clipboard-202308251052-vpgu3.png
+clipboard-202308251052-to8jq.png",Lỗi BE,2.5. TM_QLF_T/S/X/E_MBQNC_35,,Không,"Thêm mới/ cập nhật: Nhập Mã IBM = 100 ký tự
+
+Hiện trạng: Import thành công nhưng k lưu thông tin vào DB
+Mong muốn: Lưu thông tin vào DB
+
+!clipboard-202308251051-9frua.png!
+
+!clipboard-202308251052-vpgu3.png!
+
+!clipboard-202308251052-to8jq.png!
+",""
+5568,PYC_4177291,Bug,5099,2.3. Thêm mới chức năng Cập nhật Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay,[2.3. Thêm mới chức năng Cập nhật Mapping bỏ qua nợ cước v2] hệ thống ko validate Ngày hiệu lực ,Hải Đồng,Bùi Minh Tuấn,28-08-2023 09:04,"","",25-08-2023,"","","",0.00,0.00,0,25-08-2023 10:46,28-08-2023 09:04,Hải Đồng,"","clipboard-202308251045-3epjk.png
+clipboard-202308251046-kuxcc.png
+clipboard-202308251046-yigqr.png
+clipboard-202308251046-xcgce.png",Lỗi BE,2.3,,Không,"!clipboard-202308251045-3epjk.png!
+!clipboard-202308251046-kuxcc.png!
+!clipboard-202308251046-yigqr.png!
+!clipboard-202308251046-xcgce.png!
+",""
+5559,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,[2.5. QLF] Xóa: Nhập ID mapping. các trường khác bỏ trống -> Thông báo lỗi Tác động k tồn tại,Thu Hương Đỗ,Bùi Minh Tuấn,05-09-2023 17:56,"","",24-08-2023,"","","",0.00,0.00,0,24-08-2023 17:07,05-09-2023 17:56,Thu Hương Đỗ,"","clipboard-202308241707-ianns.png
+clipboard-202308241707-9hpom.png
+clipboard-202308251325-zflqt.png
+clipboard-202308251325-fxwhc.png
+clipboard-202309051439-ax0hd.png",Lỗi BE,2.5. TM_QLF_T/S/X/E_MBQNC_12,1,Không,"Import file: Xóa: Nhập ID mapping. các trường khác bỏ trống
+
+Hiện Trạng: Báo lỗi hệ thống
+
+Mong muốn: 
+ - Nếu ID mapping nhập vào đang có hiệu lực 
+      -> Import thành công. Cập nhật dữ liệu vào DB
+ - Nếu ID mapping nhập vào hết hiệu lực
+      -> Thông báo lỗi ở cuối dòng: ''Không xoá được bản ghi mapping hết hiệu lực''
+
+=> Với tác động xóa: Chỉ validate trường ID mapping và validate định dạng trường Ngày hiệu lực + Ngày hết hạn. các trường khác bỏ qua k validate
+
+!clipboard-202308241707-ianns.png!
+
+!clipboard-202308241707-9hpom.png!
+","*UPDATE 2:*
+
+Xóa: Nhập ID mapping. các trường khác bỏ trống
+
+HT: Thông báo lỗi Tác động k tồn tại
+
+MM: 
+- Nếu ID mapping nhập vào đang có hiệu lực => Import thành công. Cập nhật dữ liệu vào DB
+- Nếu ID mapping nhập vào hết hiệu lực => Thông báo lỗi ở cuối dòng: ''Không xoá được bản ghi mapping hết hiệu lực'' 
+
+=> Với tác động xóa: Chỉ validate trường ID mapping và validate định dạng trường Ngày hiệu lực + Ngày hết hạn. các trường khác bỏ qua k validate
+
+!clipboard-202309051439-ax0hd.png!
+"
+5542,PYC_4177291,Bug,5099,2.3. Thêm mới chức năng Cập nhật Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay,[2.3. Thêm mới chức năng Cập nhật Mapping bỏ qua nợ cước v2] Hệ thống đang validate trường Ngày hiệu lực khi ko tác động vào,Hải Đồng,Bùi Minh Tuấn,25-08-2023 09:44,"","",24-08-2023,"","","",0.00,0.00,0,24-08-2023 11:16,25-08-2023 09:44,Hải Đồng,"",clipboard-202308241116-dfnqp.png,Lỗi BE,2.3,,Không,"ID: 121
+!clipboard-202308241116-dfnqp.png!
+",""
+5539,PYC_4177291,Bug,5098,2.2. Thêm mới chức năng Thêm mới Mapping bỏ qua nợ cước v2,Hoàn Thành,Bình thường,[2.2. Thêm mới chức năng Thêm mới Mapping bỏ qua nợ cước v2] bỏ trống tất cả các trường -> Báo lỗi hệ thống,Hải Đồng,Bùi Minh Tuấn,25-08-2023 09:35,"","",24-08-2023,"","","",0.00,0.00,0,24-08-2023 11:04,25-08-2023 09:35,Hải Đồng,"",clipboard-202308241104-xjrp9.png,Lỗi BE,2.2,,Không,"!clipboard-202308241104-xjrp9.png!
+",""
+5537,PYC_4177291,Bug,5098,2.2. Thêm mới chức năng Thêm mới Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay,[2.2. Thêm mới chức năng Thêm mới Mapping bỏ qua nợ cước v2] bỏ trống Loại dịch vụ -> báo lỗi sai,Hải Đồng,Bùi Minh Tuấn,25-08-2023 09:34,"","",24-08-2023,"","","",0.00,0.00,0,24-08-2023 11:02,25-08-2023 09:34,Hải Đồng,"",clipboard-202308241102-7jfs9.png,Lỗi BE,2.2,,Không,"!clipboard-202308241102-7jfs9.png!
+",""
+5530,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,"[2.5. QLF] Export: Nhập hợp lệ ID mapping, các trường khác k nhập -> Báo lỗi hệ thống",Thu Hương Đỗ,Bùi Minh Tuấn,28-08-2023 15:03,"","",23-08-2023,"","","",0.00,0.00,0,23-08-2023 17:03,28-08-2023 15:03,Thu Hương Đỗ,"","clipboard-202308231701-mnlfh.png
+clipboard-202308231701-eznkp.png
+clipboard-202308251116-iyjde.png
+clipboard-202308251116-tyx7f.png
+clipboard-202308251116-ew7st.png",Lỗi BE,2.5. TM_QLF_T/S/X/E_MBQNC_44,1,Không,"Import file Thao tác export: Nhập hợp lệ ID mapping. Các trường khác k nhập
+
+Hiện trạng: Hệ thống đang validate các trường k nhập
+Mong muốn: K validate các trường bỏ trống. Trả về file export tương ứng
+
+!clipboard-202308231701-mnlfh.png!
+
+!clipboard-202308231701-eznkp.png!
+"," *UPDATE:*
+
+Hiện trạng: Hệ thống k validate các trường bỏ trống nhưng khi import file lên báo lỗi hệ thống
+
+!clipboard-202308251116-iyjde.png!
+
+!clipboard-202308251116-tyx7f.png!
+
+!clipboard-202308251116-ew7st.png!
+"
+5508,PYC_4177291,Bug,5099,2.3. Thêm mới chức năng Cập nhật Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay,[2.3. Thêm mới chức năng Cập nhật Mapping bỏ qua nợ cước v2] Cập nhật bản ghi cũ -> báo lỗi,Hải Đồng,Bùi Minh Tuấn,25-08-2023 10:46,"","",23-08-2023,"","","",0.00,0.00,0,23-08-2023 10:59,25-08-2023 10:46,Hải Đồng,"","clipboard-202308231059-a8ulq.png
+clipboard-202308231059-qhdot.png
+clipboard-202308231059-tvqxs.png",Lỗi BE,2.3,,Không,"!clipboard-202308231059-a8ulq.png!
+!clipboard-202308231059-qhdot.png!
+!clipboard-202308231059-tvqxs.png!
+",""
+5504,PYC_4177291,Bug,5098,2.2. Thêm mới chức năng Thêm mới Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay,[2.2. Thêm mới chức năng Thêm mới Mapping bỏ qua nợ cước v2] Loại dịch vụ :Chọn lại option Chọn giá trị -> Hiển thị value cũ,Hải Đồng,Bùi Minh Tuấn,24-08-2023 11:08,"","",23-08-2023,"","","",0.00,0.00,0,23-08-2023 10:18,24-08-2023 11:08,Hải Đồng,"","clipboard-202308231017-kg1lm.png
+clipboard-202308231017-ocfce.png
+clipboard-202308231017-yzorj.png",Lỗi FE,2.2,,Không,"!clipboard-202308231017-kg1lm.png!
+!clipboard-202308231017-ocfce.png!
+!clipboard-202308231017-yzorj.png!
+",""
+5502,PYC_4177291,Bug,5098,2.2. Thêm mới chức năng Thêm mới Mapping bỏ qua nợ cước v2,Hoàn Thành,Bình thường,[2.2. Thêm mới chức năng Thêm mới Mapping bỏ qua nợ cước v2] bỏ trống Cửa hàng-> Hiển thị value = null,Hải Đồng,Bùi Minh Tuấn,24-08-2023 11:07,"","",23-08-2023,"","","",0.00,0.00,0,23-08-2023 10:07,24-08-2023 11:07,Hải Đồng,"",clipboard-202308231007-wekyj.png,Lỗi FE,2.2,,Không,"!clipboard-202308231007-wekyj.png!
+",""
+5495,PYC_4177291,Bug,5097,2.1. Thêm mới chức năng Tìm kiếm Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay," [2.1. Thêm mới chức năng Tìm kiếm Mapping bỏ qua nợ cước v2] Nhập ngày hiệu lực, Ngày hết hạn sai định dạng -> Ko báo lỗi",Hải Đồng,Bùi Minh Tuấn,25-08-2023 17:01,"","",23-08-2023,"","","",0.00,0.00,0,23-08-2023 09:29,25-08-2023 17:01,Hải Đồng,"",clipboard-202308230929-pmmgs.png,Lỗi BE,2.1,1,Không,"!clipboard-202308230929-pmmgs.png!
+",do chung màn thêm mới vs tìm kiếm
+5493,PYC_4177291,Bug,5097,2.1. Thêm mới chức năng Tìm kiếm Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay,[2.1. Thêm mới chức năng Tìm kiếm Mapping bỏ qua nợ cước v2] Màn Tìm kiếm trường Trạng thái đang thiếu option Chọn giá trị,Hải Đồng,Bùi Minh Tuấn,24-08-2023 10:49,"","",23-08-2023,"","","",0.00,0.00,0,23-08-2023 09:21,24-08-2023 10:49,Hải Đồng,"",clipboard-202308230921-fw2lo.png,Lỗi FE,2.1,,Không,"!clipboard-202308230921-fw2lo.png!
+",""
+5471,PYC_4177291,Bug,5099,2.3. Thêm mới chức năng Cập nhật Mapping bỏ qua nợ cước v2,Hoàn Thành,Bình thường,[2.3. Thêm mới chức năng Cập nhật Mapping bỏ qua nợ cước v2] thiếu dấu *,Hải Đồng,Bùi Minh Tuấn,22-08-2023 18:32,"","",22-08-2023,"","","",0.00,0.00,0,22-08-2023 10:58,22-08-2023 18:32,Hải Đồng,"",clipboard-202308221057-yxvyi.png,Lỗi FE,2.3,,Không,"!clipboard-202308221057-yxvyi.png!
+",""
+5469,PYC_4177291,Bug,5097,2.1. Thêm mới chức năng Tìm kiếm Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay,"[2.1+ 2.2 Thêm mới chức năng Tìm kiếm/TM Mapping bỏ qua nợ cước v2] Danh sách của hàng, Nhân viên đang hiển thị sai kích thước",Hải Đồng,Bùi Minh Tuấn,23-08-2023 09:25,"","",22-08-2023,"","","",0.00,0.00,0,22-08-2023 10:15,23-08-2023 09:25,Hải Đồng,"","clipboard-202308221014-quipe.png
+clipboard-202308221014-h3kyt.png
+clipboard-202308221015-am7x3.png
+clipboard-202308221021-zy0te.png",Lỗi FE,2.1,,Không,"!clipboard-202308221014-quipe.png!
+!clipboard-202308221014-h3kyt.png!
+!clipboard-202308221015-am7x3.png!
+!clipboard-202308221021-zy0te.png!
+",Giới hạn kích thước bản ghi tìm kiếm thành 10 để giảm thời gian load dữ liệu
+5466,PYC_4177291,Bug,5097,2.1. Thêm mới chức năng Tìm kiếm Mapping bỏ qua nợ cước v2,Hoàn Thành,Bình thường,[2.1. Thêm mới chức năng Tìm kiếm Mapping bỏ qua nợ cước v2] Sai text,Hải Đồng,Bùi Minh Tuấn,22-08-2023 18:30,"","",22-08-2023,"","","",0.00,0.00,0,22-08-2023 09:29,22-08-2023 18:30,Hải Đồng,"",clipboard-202308220928-ifmrx.png,Lỗi FE,2.1,,Không,"!clipboard-202308220928-ifmrx.png!
+",""
+5465,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Bình thường,"[2.5. QLF] Nhập Thao tác not in (0,1,2,3) -> Thông báo lỗi chưa chính xác",Thu Hương Đỗ,Bùi Minh Tuấn,25-08-2023 09:55,"","",21-08-2023,"","","",0.00,0.00,0,21-08-2023 18:23,25-08-2023 09:55,Thu Hương Đỗ,"",clipboard-202308211823-ws76f.png,Lỗi FE,QLF,,Không,"Import file: Nhập Thao tác not in (0,1,2,3)
+
+Hiện trạng: Thông báo lỗi chưa chính xác
+Mong muốn: Đổi thành: ''Thao tác nhập vào không hợp lệ''
+
+!clipboard-202308211823-ws76f.png!
+",""
+5463,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,"[2.5. QLF] Cập nhật: Nhập Trạng thái khác 0, 1 -> Import thành công",Thu Hương Đỗ,Bùi Minh Tuấn,07-09-2023 13:39,"","",21-08-2023,"","","",0.00,0.00,0,21-08-2023 18:06,07-09-2023 13:39,Thu Hương Đỗ,"","clipboard-202308211805-ku7p1.png
+clipboard-202308211805-hwjm8.png
+clipboard-202309061152-iglne.png
+clipboard-202309061152-6jmgt.png",Lỗi BE,QLF - Cập nhật,1,Không,"Import file: Thao tác = 2: Nhập Trạng thái khác 0, 1
+
+Hiện trạng: Import thành công. Lưu status = giá trị trường Trạng thái đã import
+Mong muốn: Thông báo lỗi trong file trả về:
+                        '' Trạng thái nhập vào không hợp lệ''
+
+!clipboard-202308211805-ku7p1.png!
+
+!clipboard-202308211805-hwjm8.png!
+","*REOPEN*
+
+
+!clipboard-202309061152-iglne.png!
+
+!clipboard-202309061152-6jmgt.png!
+"
+5460,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Hoàn Thành,Làm ngay,"[2.5. QLF] Tác động Xóa : Nhập Id mapping ko tồn tại -> báo lỗi tại ô input, validate các trường thông tin khác",Hải Đồng,Bùi Minh Tuấn,24-08-2023 11:00,"","",21-08-2023,"","","",0.00,0.00,0,21-08-2023 17:18,24-08-2023 11:00,Thu Hương Đỗ,"","clipboard-202308211717-yg9uu.png
+clipboard-202308231613-orqjv.png
+clipboard-202308231709-qfwxa.png",Lỗi BE,2.5,1,Không,"!clipboard-202308231709-qfwxa.png!
+!clipboard-202308211717-yg9uu.png!
+","!clipboard-202308231613-orqjv.png!
+"
+5446,PYC_4177291,Bug,5099,2.3. Thêm mới chức năng Cập nhật Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay,"[2.3. Thêm mới chức năng Cập nhật Mapping bỏ qua nợ cước v2] Xóa giá trị trường Cửa hàng, Nhân viên -> đg hiển thị giá trị cũ",Hải Đồng,Bùi Minh Tuấn,28-08-2023 13:36,"","",21-08-2023,"","","",0.00,0.00,0,21-08-2023 15:49,28-08-2023 13:36,Trịnh  Khánh Toàn,"","clipboard-202308211549-ssz1c.png
+clipboard-202308211549-8gsjy.png
+clipboard-202308211549-o5evf.png
+clipboard-202308211549-skq2j.png
+clipboard-202308231022-934re.png",Lỗi BE,2.3,1,Không,"!clipboard-202308211549-ssz1c.png!
+!clipboard-202308211549-8gsjy.png!
+!clipboard-202308211549-skq2j.png!
+",@haidv như bug #5570 
+5436,PYC_4177291,Bug,5097,2.1. Thêm mới chức năng Tìm kiếm Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay, [2.1.+ 2.2 + 2.3 Thêm mới chức năng Tìm kiếm/TM/cập nhật Mapping bỏ qua nợ cước v2]Xóa giá trị ngày hiệu lực-> Đang hiển hiển thị giá trị cũ,Hải Đồng,Bùi Minh Tuấn,24-08-2023 10:48,"","",21-08-2023,"","","",0.00,0.00,0,21-08-2023 15:12,24-08-2023 10:48,Hải Đồng,"","clipboard-202308211511-jb3my.png
+clipboard-202308211512-ca34b.png",Lỗi FE,2.1,,Không,"!clipboard-202308211511-jb3my.png!
+!clipboard-202308211512-ca34b.png!
+",""
+5434,PYC_4177291,Bug,5097,2.1. Thêm mới chức năng Tìm kiếm Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay,[2.1. Thêm mới chức năng Tìm kiếm Mapping bỏ qua nợ cước v2] Sửa đk tìm kiếm-> hệ thống ko tìm kiếm theo đk,Hải Đồng,Bùi Minh Tuấn,24-08-2023 10:48,"","",21-08-2023,"","","",0.00,0.00,0,21-08-2023 15:07,24-08-2023 10:48,Hải Đồng,"","clipboard-202308211507-fobxp.png
+clipboard-202308211507-fld8r.png
+clipboard-202308211507-thv3f.png",Lỗi BE,2.1,,Không,"!clipboard-202308211507-fobxp.png!
+!clipboard-202308211507-fld8r.png!
+!clipboard-202308211507-thv3f.png!
+",""
+5430,PYC_4177291,Bug,5100,2.4. Thêm mới chức năng Xoá Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay,[2.2+2.3+2.4 Thêm mới/Cập nhật/Xóa Mapping bỏ qua nợ cước v2] Chưa lưu log tác động,Hải Đồng,Bùi Minh Tuấn,31-08-2023 16:22,"","",21-08-2023,"","","",0.00,0.00,0,21-08-2023 14:29,31-08-2023 16:22,Thu Hương Đỗ,"","clipboard-202308211428-apbqm.png
+clipboard-202308211436-qe3d0.png",Lỗi BE,2.2+2.3+2.4,,Không,"!clipboard-202308211436-qe3d0.png!
+",""
+5418,PYC_4177291,Bug,5098,2.2. Thêm mới chức năng Thêm mới Mapping bỏ qua nợ cước v2,Hoàn Thành,Làm ngay,[2.2. + 2.3 Thêm mới chức năng Thêm mới/CN Mapping bỏ qua nợ cước v2] Danh sách cửa hàng đang sắp xếp sai,Hải Đồng,Bùi Minh Tuấn,23-08-2023 10:04,"","",21-08-2023,"","","",0.00,0.00,0,21-08-2023 11:42,23-08-2023 09:49,Hải Đồng,"","clipboard-202308211142-5j0wf.png
+clipboard-202308221001-ityyo.png
+clipboard-202308221002-iuuz4.png",Lỗi BE,2.2,1,Không,"!clipboard-202308211142-5j0wf.png!
+","Hải Đồng đã viết:
+> !clipboard-202308211142-5j0wf.png!
+
+Sự khác biệt cho tìm kiếm thêm dấu space, "
+5669,PYC_4177291,Bug,5099,2.3. Thêm mới chức năng Cập nhật Mapping bỏ qua nợ cước v2,Làm lại,Làm ngay,[2.3. CẬP NHẬT MAPPING BỎ QUA NỢ CƯỚC V2] Create_user + Create_datetime lưu chưa chính xác,Thu Hương Đỗ,Bùi Minh Tuấn,31-08-2023 16:47,"","",31-08-2023,"","","",0.00,0.00,0,31-08-2023 15:40,"",Thu Hương Đỗ,"","clipboard-202308311538-lqpgf.png
+clipboard-202308311538-q8a0l.png
+clipboard-202308311538-d644j.png
+clipboard-202308311647-20izl.png
+clipboard-202308311647-qfd6a.png",Lỗi BE,2.3. CẬP NHẬT MAPPING BỎ QUA NỢ CƯỚC V2,1,Không,"B1. Dùng user đăng nhâp = VTT1
+      Thêm mới thành công 1 bản ghi mapping
+      -> Hiện trạng: create_user lưu đúng = user đăng nhập
+
+B2. Dùng user đăng nhập = PRODUCT 
+      Cập nhật bản ghi vừa thêm thành công ở B1
+
+HT: - Create_user bị chuyển thành PRODUCT
+      - Create_datetime bị null
+
+MM: - Create_user phải là VTT1 (như B1)
+       - Create_datetime phải giữ nguyên như B1
+-> Sau khi cập nhật bản ghi, chỉ thay đổi update_user + update_datetime
+
+!clipboard-202308311538-lqpgf.png!
+
+!clipboard-202308311538-q8a0l.png!
+
+!clipboard-202308311538-d644j.png!
+","B1. Dùng user đăng nhập = VTT1
+      Thêm mới thành công 1 bản ghi
+
+-> Hiện trạng: create_user đang = null
+     Mong muốn: create_user = VTT1
+
+B2. Dùng user đăng nhập = PRODUCT
+      Cập nhật thành công bản ghi ở B1
+
+-> Hiện trạng: - update create_user = PRODUCT
+                      - update_user vẫn giữ nguyên
+                      - update create_datetime = null
+
+Mong muốn: - create_user phải giữ nguyên = VTT1
+                     - update update_user = PRODUCT
+                     - create_datetime phải giữ nguyên
+
+!clipboard-202308311647-20izl.png!
+
+!clipboard-202308311647-qfd6a.png!
+"
+5806,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Chờ test,Làm ngay,[2.5. QLF] Trong cùng 1 file: Vừa có bản ghi k hợp lệ. vừa có bản ghi export hợp lệ -> Chỉ trả về file export. K thấy trả về file lỗi,Thu Hương Đỗ,Bùi Minh Tuấn,08-09-2023 15:45,"","",08-09-2023,"","","",0.00,0.00,0,08-09-2023 14:46,"",Bùi Minh Tuấn,"","clipboard-202309081446-ocq6l.png
+clipboard-202309081446-bgkbm.png",Lỗi BE,2.5. QLF,,Không,"Trong cùng 1 file có 3 bản ghi: 2 bản ghi nhập k hợp lệ + 1 bản ghi export nhập hợp lệ
+
+HT: Chỉ trả về file export. K thấy trả về file lỗi
+MM: Trả cả file thông báo lỗi về
+
+!clipboard-202309081446-ocq6l.png!
+
+!clipboard-202309081446-bgkbm.png!
+",""
+5769,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Chờ test,Làm ngay,"[2.5. QLF] Trong cùng 1 file: Vừa có bản ghi hợp lệ. vừa có bản ghi hợp lệ -> K thông báo SUCCESS cho bản ghi hợp lệ, cx k insert vào DB",Thu Hương Đỗ,Bùi Minh Tuấn,08-09-2023 15:46,"","",06-09-2023,"","","",0.00,0.00,0,06-09-2023 18:38,"",Bùi Minh Tuấn,"","clipboard-202309061837-6mius.png
+clipboard-202309061838-7dgso.png
+clipboard-202309071129-eccvc.png
+clipboard-202309071129-g6k0y.png
+clipboard-202309071129-rznxg.png",Lỗi BE,2.5. QLF],1,Không,"Trong cùng 1 file: Vừa có bản ghi hợp lệ. vừa có bản ghi hợp lệ
+
+HT: Báo lỗi cả ở bản ghi nhập hợp lệ
+
+MM: Trả về file thông báo lỗi: 
+      - Bản ghi hợp lệ -> Thông báo: SUCCESS + Insert thông tin vào DB
+       - Bản ghi k hợp lệ -> Thông báo lỗi tương ứng trong file trả về
+
+!clipboard-202309061837-6mius.png!
+
+!clipboard-202309061838-7dgso.png!
+","*UPDATE:*
+
+!clipboard-202309071129-eccvc.png!
+
+!clipboard-202309071129-g6k0y.png!
+
+!clipboard-202309071129-rznxg.png!
+"
+5613,PYC_4177291,Bug,5101,2.5. Thêm mới chức năng Quản lý file – Thêm/cập nhật/xoá/export mapping bỏ qua nợ cước,Chờ test,Bình thường,[2.5. QLF] File export trả về: Tên file + tên sheet chưa chính xác,Thu Hương Đỗ,Bùi Minh Tuấn,08-09-2023 15:50,"","",28-08-2023,"","","",0.00,0.00,0,28-08-2023 14:59,"",Bùi Minh Tuấn,"",clipboard-202308281458-xn7px.png,Lỗi FE,2.5. TM_QLF_T/S/X/E_MBQNC_1,,Không,"File export trả về:
+
+HT: Tên file + tên sheet chưa chính xác
+MM: Đổi thành: DSMappingBoQuaNoCuoc
+
+!clipboard-202308281458-xn7px.png!
+",""
